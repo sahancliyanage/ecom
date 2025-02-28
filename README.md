@@ -8,7 +8,7 @@ CREATE DATABASE greenhut;
 USE greenhut;
 
 product table
-CREATE TABLE product (
+CREATE TABLE products (
     product_id INT(11) AUTO_INCREMENT PRIMARY KEY,
     product_name VARCHAR(255) COLLATE utf8mb4_general_ci NOT NULL,
     product_description TEXT COLLATE utf8mb4_general_ci NULL,
