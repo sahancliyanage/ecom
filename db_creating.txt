@@ -1,0 +1,18 @@
+-- Create database
+CREATE DATABASE ecommerce_db;
+
+-- Use the database
+USE ecommerce_db;
+
+-- Create orders table
+CREATE TABLE orders (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  full_name VARCHAR(100),
+  address VARCHAR(255),
+  card_number VARCHAR(20),
+  expiry_date VARCHAR(10),
+  cvv VARCHAR(5),
+  product VARCHAR(100),
+  price DECIMAL(10, 2),
+  order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
